@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.k7hw1.ui.SecondFragment">
+<EditText
+    android:id="@+id/text"
+    android:textColorHint="@color/black"
+    android:inputType="textCapSentences"
+    android:hint="введите новость"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/texttwo"
+        android:textColorHint="@color/black"
+        android:inputType="textCapSentences"
+        android:hint="введите описание"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:background="@drawable/button_send"
+        android:layout_height="wrap_content"
+        android:text="send" />
+</LinearLayout>
