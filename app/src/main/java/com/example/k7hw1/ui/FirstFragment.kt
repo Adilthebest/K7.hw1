@@ -1,20 +1,16 @@
 package com.example.k7hw1.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.k7hw1.R
 import com.example.k7hw1.databinding.FragmentFirstBinding
-import com.example.k7hw1.room.AppDao
-import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
-@AndroidEntryPoint
 
-class FirstFragment     @Inject constructor(private var dao: AppDao): Fragment() {
+class FirstFragment : Fragment() {
 
     private lateinit var binding: FragmentFirstBinding
 

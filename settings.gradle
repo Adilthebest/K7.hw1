@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "K7.hw1"
-include ':app'
+include (":app")

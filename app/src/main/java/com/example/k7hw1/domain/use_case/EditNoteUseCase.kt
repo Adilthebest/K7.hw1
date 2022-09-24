@@ -1,8 +1,9 @@
 package com.example.k7hw1.domain.use_case
 
-import com.example.k7hw1.data.model.Note
-import com.example.k7hw1.data.repository.NoteRepositoryImpl
+import com.example.k7hw1.domain.model.Note
+import com.example.k7hw1.domain.repository.NoteRepository
+import javax.inject.Inject
 
-class EditNoteUseCase(private  val noteRepositoryImpl:NoteRepositoryImpl) {
-    fun getAllNotes() = noteRepositoryImpl.getAllNotes()
+class EditNoteUseCase @Inject constructor(private  val noteRepository: NoteRepository) {
+    fun editNotes(note: Note) = noteRepository.editNote(note )
 }
